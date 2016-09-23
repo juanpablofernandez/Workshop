@@ -25,7 +25,7 @@
         <!--Workshops-->
         <scene sceneID="xzi-7m-iJI">
             <objects>
-                <viewController id="agz-KU-ZAo" sceneMemberID="viewController">
+                <viewController id="agz-KU-ZAo" customClass="WorkshopsViewController" customModule="Workshop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cxm-GL-kGb"/>
                         <viewControllerLayoutGuide type="bottom" id="7ke-Zp-BlY"/>
@@ -35,23 +35,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eCX-4l-1ty">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.77647058823529413" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Roq-a3-StI">
-                                    <size key="itemSize" width="95" height="90"/>
+                                    <size key="itemSize" width="128" height="113"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Jq-LH-bVy">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="90"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="3Jq-LH-bVy" customClass="WorkshopCollectionViewCell" customModule="Workshop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="95" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="agz-KU-ZAo" id="tj8-Kf-UAX"/>
+                                    <outlet property="delegate" destination="agz-KU-ZAo" id="TQH-TP-6VR"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,6 +74,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Workshops" id="Loz-pZ-3gn"/>
                     <navigationItem key="navigationItem" title="Workshops" id="ftN-C1-9hV"/>
+                    <connections>
+                        <outlet property="collectionView" destination="eCX-4l-1ty" id="WuA-4i-Qrf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPH-gT-AAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +85,7 @@
         <!--Feed-->
         <scene sceneID="BBb-Pd-INP">
             <objects>
-                <viewController id="Oal-Qf-qdV" sceneMemberID="viewController">
+                <viewController id="Oal-Qf-qdV" customClass="FeedViewController" customModule="Workshop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Vq-bG-ECm"/>
                         <viewControllerLayoutGuide type="bottom" id="JzT-aO-Bgp"/>
@@ -81,14 +94,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-dD-Sqb">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-dD-Sqb">
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.77647058823529413" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.19215686269999999" green="0.77647058820000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="F7B-l6-Ce1">
+                                    <rect key="frame" x="0.0" y="161" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0QC-Sv-GT0">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="69" id="0QC-Sv-GT0" customClass="FeedTableViewCell" customModule="Workshop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0QC-Sv-GT0" id="Ic1-Mh-wVi">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -105,10 +124,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="qzd-sD-6iA"/>
                     <navigationItem key="navigationItem" title="Feed" id="Q2Z-Qv-D7X"/>
+                    <connections>
+                        <outlet property="tableView" destination="iLS-dD-Sqb" id="sV4-Zv-ED2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xX-o6-QSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-179"/>
+            <point key="canvasLocation" x="933.60000000000002" y="-179.46026986506749"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bTp-ps-UPa">
