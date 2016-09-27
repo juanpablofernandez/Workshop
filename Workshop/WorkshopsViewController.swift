@@ -25,11 +25,14 @@ class WorkshopsViewController: UIViewController {
     }
     
     func navBar() {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 255/255.0, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 74/255.0, green: 144/255.0, blue: 226/255.0, alpha: 1)
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Workshops", style: .plain, target: nil, action: nil)
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 25)!, NSForegroundColorAttributeName: UIColor.white]
+        tabBarController?.tabBar.tintColor = UIColor.white
+        tabBarController?.tabBar.barTintColor = UIColor(red: 74/255.0, green: 144/255.0, blue: 226/255.0, alpha: 1)
+
     }
     
 
@@ -47,12 +50,29 @@ class WorkshopsViewController: UIViewController {
 
 extension WorkshopsViewController: UICollectionViewDataSource {
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let screenWidth = collectionView.bounds.width
-        let screenHeight = collectionView.bounds.height
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        let screenWidth = collectionView.bounds.width
+//        let screenHeight = collectionView.bounds.height
+//        
+//        let size = CGSize.init(width: screenWidth/3, height: screenHeight/4)
+//        return size
+//    }
+    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        // Compute the dimension of a cell for an NxN layout with space S between
+//        // cells.  Take the collection view's width, subtract (N-1)*S points for
+//        // the spaces between the cells, and then divide by N to find the final
+//        // dimension for the cell's width and height.
+//        
+//        let cellsAcross: CGFloat = 3
+//        let spaceBetweenCells: CGFloat = 3
+//        let dim = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
+//        return CGSize(width: dim, height: dim)
+//    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width/5, height: collectionView.frame.height);
         
-        let size = CGSize.init(width: screenWidth/3, height: screenHeight/4)
-        return size
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

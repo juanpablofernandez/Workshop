@@ -15,6 +15,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar()
+
         
 
         // Do any additional setup after loading the view.
@@ -26,11 +27,13 @@ class FeedViewController: UIViewController {
     }
     
     func navBar() {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 255/255.0, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 74/255.0, green: 144/255.0, blue: 226/255.0, alpha: 1)
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Feed", style: .plain, target: nil, action: nil)
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 25)!, NSForegroundColorAttributeName: UIColor.white]
+        tabBarController?.tabBar.tintColor = UIColor.white
+        tabBarController?.tabBar.barTintColor = UIColor(red: 74/255.0, green: 144/255.0, blue: 226/255.0, alpha: 1)
     }
     
 
