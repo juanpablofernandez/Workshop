@@ -15,7 +15,17 @@ class WorkshopsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar()
+        
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+//        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+//        let screenWidth = collectionView.bounds.width
+//        let screenHeight = collectionView.bounds.height
+//        layout.itemSize = CGSize(width: screenWidth/4, height: screenHeight/4)
+//        layout.minimumInteritemSpacing = 0
+//        layout.minimumLineSpacing = 0
+//        collectionView!.collectionViewLayout = layout
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -50,13 +60,21 @@ class WorkshopsViewController: UIViewController {
 
 extension WorkshopsViewController: UICollectionViewDataSource {
     
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        let screenWidth = collectionView.bounds.width
-//        let screenHeight = collectionView.bounds.height
-//        
-//        let size = CGSize.init(width: screenWidth/3, height: screenHeight/4)
-//        return size
-//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        let screenWidth = collectionView.bounds.width
+        let screenHeight = collectionView.bounds.height
+        
+        let size = CGSize.init(width: screenWidth/4, height: screenHeight/4)
+        return size
+        
+//        UICollectionViewDelegateFlowLayout.self
+        
+    }
+
+    
+    
     
 //    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 //        // Compute the dimension of a cell for an NxN layout with space S between
@@ -70,10 +88,17 @@ extension WorkshopsViewController: UICollectionViewDataSource {
 //        return CGSize(width: dim, height: dim)
 //    }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/5, height: collectionView.frame.height);
-        
-    }
+//    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.width/5, height: collectionView.frame.height);
+//        
+//    }
+//    
+//    func collectionviewsi
+//    
+//
+//    
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -83,7 +108,7 @@ extension WorkshopsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 30
+        return 50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

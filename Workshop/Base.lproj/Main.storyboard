@@ -192,7 +192,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="web" translatesAutoresizingMaskIntoConstraints="NO" id="wZx-rZ-vhR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wZx-rZ-vhR">
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="wZx-rZ-vhR" secondAttribute="height" id="NgC-KR-aN1"/>
                                                     </constraints>
@@ -274,7 +274,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0QC-Sv-GT0" id="Ic1-Mh-wVi">
-                                            <frame key="frameInset" width="375" height="68"/>
+                                            <frame key="frameInset" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
@@ -329,7 +329,6 @@
         <image name="background" width="375" height="667"/>
         <image name="feed" width="23" height="25"/>
         <image name="loginButton" width="221" height="37"/>
-        <image name="web" width="750" height="456"/>
         <image name="workshops" width="25" height="25"/>
     </resources>
 </document>
