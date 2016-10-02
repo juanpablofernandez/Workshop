@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nz1-tf-g6a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nz1-tf-g6a">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -12,7 +12,7 @@
         <scene sceneID="vfJ-jS-5Xs">
             <objects>
                 <navigationController id="qpF-g4-81f" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MaL-QO-DRL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MaL-QO-DRL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-652" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="W5D-ae-lAX">
             <objects>
-                <viewController id="Nz1-tf-g6a" sceneMemberID="viewController">
+                <viewController id="Nz1-tf-g6a" customClass="LoginController" customModule="Workshop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6iB-Uo-cQV"/>
                         <viewControllerLayoutGuide type="bottom" id="B3L-7f-1qw"/>
@@ -158,6 +158,9 @@
                             <constraint firstItem="vns-IW-eq4" firstAttribute="height" secondItem="kbh-Wg-VcN" secondAttribute="height" multiplier="0.5" id="xee-nZ-G5B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginRegisterButton" destination="zwp-R5-hgd" id="qJh-tM-zpj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcq-kl-ZkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,7 +277,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0QC-Sv-GT0" id="Ic1-Mh-wVi">
-                                            <frame key="frameInset" width="375" height="69"/>
+                                            <frame key="frameInset" width="375" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14AA459A3C8FDE45C7D3AD1C /* Pods_Workshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB89FEF22D7ABC128954704 /* Pods_Workshop.framework */; };
 		1F4126A91DA08D1200DF3CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */; };
+		1F4126AB1DA0901000DF3CC0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4126AA1DA0901000DF3CC0 /* LoginController.swift */; };
 		698638341D949DAE00FEA954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698638331D949DAE00FEA954 /* AppDelegate.swift */; };
 		698638361D949DAE00FEA954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698638351D949DAE00FEA954 /* ViewController.swift */; };
 		698638391D949DAF00FEA954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698638371D949DAF00FEA954 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		183560C08FA4C42BEA591A50 /* Pods-Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.debug.xcconfig"; sourceTree = "<group>"; };
 		1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F4126AA1DA0901000DF3CC0 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		3AB89FEF22D7ABC128954704 /* Pods_Workshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B8800CDDE33D50022100C /* Pods-Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.release.xcconfig"; sourceTree = "<group>"; };
 		698638301D949DAE00FEA954 /* Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */,
 				6986383C1D949DAF00FEA954 /* LaunchScreen.storyboard */,
 				6986383F1D949DAF00FEA954 /* Info.plist */,
+				1F4126AA1DA0901000DF3CC0 /* LoginController.swift */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				698638361D949DAE00FEA954 /* ViewController.swift in Sources */,
 				698638481D94A30000FEA954 /* FeedViewController.swift in Sources */,
 				698638341D949DAE00FEA954 /* AppDelegate.swift in Sources */,
+				1F4126AB1DA0901000DF3CC0 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
