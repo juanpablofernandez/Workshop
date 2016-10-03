@@ -25,6 +25,7 @@
 		183560C08FA4C42BEA591A50 /* Pods-Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.debug.xcconfig"; sourceTree = "<group>"; };
 		1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F4126AA1DA0901000DF3CC0 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1F4126AC1DA1C7F900DF3CC0 /* googlesignin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = googlesignin.h; sourceTree = "<group>"; };
 		3AB89FEF22D7ABC128954704 /* Pods_Workshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B8800CDDE33D50022100C /* Pods-Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.release.xcconfig"; sourceTree = "<group>"; };
 		698638301D949DAE00FEA954 /* Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,13 +87,14 @@
 				698638371D949DAF00FEA954 /* Main.storyboard */,
 				698638451D94A2F200FEA954 /* WorkshopsViewController.swift */,
 				698638471D94A30000FEA954 /* FeedViewController.swift */,
+				1F4126AA1DA0901000DF3CC0 /* LoginController.swift */,
 				698638491D94A31200FEA954 /* WorkshopCollectionViewCell.swift */,
 				6986384B1D94A32200FEA954 /* FeedTableViewCell.swift */,
 				6986383A1D949DAF00FEA954 /* Assets.xcassets */,
 				1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */,
 				6986383C1D949DAF00FEA954 /* LaunchScreen.storyboard */,
 				6986383F1D949DAF00FEA954 /* Info.plist */,
-				1F4126AA1DA0901000DF3CC0 /* LoginController.swift */,
+				1F4126AC1DA1C7F900DF3CC0 /* googlesignin.h */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";

@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    ///////////////////////////////////////////////
 
     func application(_ application: UIApplication,
                      open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
@@ -81,6 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                      openURL url: URL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         var options: [String: AnyObject] = [UIApplicationOpenURLOptionsKey.sourceApplication.rawValue: sourceApplication as AnyObject,
                                             UIApplicationOpenURLOptionsKey.annotation.rawValue: annotation!]
+        print (options)
         return GIDSignIn.sharedInstance().handle(url as URL!,
                                                     sourceApplication: sourceApplication,
                                                     annotation: annotation)

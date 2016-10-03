@@ -12,7 +12,7 @@ import GoogleSignIn
 
 class LoginController: UIViewController, GIDSignInUIDelegate {
     
-    var signInButton: GIDSignInButton!
+    @IBOutlet weak var signInButton: GIDSignInButton!
     //
     var googleRegisterButton: GIDSignInButton! = {
         let button = GIDSignInButton()
