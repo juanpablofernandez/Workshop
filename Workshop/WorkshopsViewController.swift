@@ -59,20 +59,33 @@ class WorkshopsViewController: UIViewController {
 
 }
 
-extension WorkshopsViewController: UICollectionViewDataSource {
+extension WorkshopsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+//        self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         let screenWidth = collectionView.bounds.width
         let screenHeight = collectionView.bounds.height
         
-        let size = CGSize.init(width: screenWidth/4, height: screenHeight/4)
+        let size = CGSize.init(width: screenWidth/2, height: screenHeight/5)
+        
+        print("It Works!")
         return size
         
 //        UICollectionViewDelegateFlowLayout.self
         
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        print("It Works!")
+//        self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+//        let screenWidth = collectionView.bounds.width
+//        let screenHeight = collectionView.bounds.height
+//
+//        let size = CGSize.init(width: screenWidth/3, height: screenHeight/4)
+//        return size
+//    }
+    
 
     
     
@@ -100,6 +113,16 @@ extension WorkshopsViewController: UICollectionViewDataSource {
 //
 //    
     
+    //Use for size
+    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        
+//        let screenWidth = collectionView.bounds.width
+//        let screenHeight = collectionView.bounds.height
+//        
+//        let size = CGSize.init(width: screenWidth/4, height: screenHeight/4)
+//        return size
+//    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -109,7 +132,7 @@ extension WorkshopsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 50
+        return 12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

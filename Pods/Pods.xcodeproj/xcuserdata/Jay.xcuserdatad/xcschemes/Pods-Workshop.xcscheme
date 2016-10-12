@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6986382F1D949DAE00FEA954"
-               BuildableName = "Workshop.app"
-               BlueprintName = "Workshop"
-               ReferencedContainer = "container:Workshop.xcodeproj">
+               BlueprintIdentifier = "8D16B5B042ECE183073AF1F958080C91"
+               BuildableName = "Pods_Workshop.framework"
+               BlueprintName = "Pods-Workshop"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6986382F1D949DAE00FEA954"
-            BuildableName = "Workshop.app"
-            BlueprintName = "Workshop"
-            ReferencedContainer = "container:Workshop.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6986382F1D949DAE00FEA954"
-            BuildableName = "Workshop.app"
-            BlueprintName = "Workshop"
-            ReferencedContainer = "container:Workshop.xcodeproj">
+            BlueprintIdentifier = "8D16B5B042ECE183073AF1F958080C91"
+            BuildableName = "Pods_Workshop.framework"
+            BlueprintName = "Pods-Workshop"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6986382F1D949DAE00FEA954"
-            BuildableName = "Workshop.app"
-            BlueprintName = "Workshop"
-            ReferencedContainer = "container:Workshop.xcodeproj">
+            BlueprintIdentifier = "8D16B5B042ECE183073AF1F958080C91"
+            BuildableName = "Pods_Workshop.framework"
+            BlueprintName = "Pods-Workshop"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

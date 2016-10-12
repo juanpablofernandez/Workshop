@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nz1-tf-g6a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nz1-tf-g6a">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -195,7 +195,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wZx-rZ-vhR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="wZx-rZ-vhR">
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="wZx-rZ-vhR" secondAttribute="height" id="NgC-KR-aN1"/>
                                                     </constraints>
@@ -267,17 +267,17 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-dD-Sqb">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="F7B-l6-Ce1">
+                                <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="F7B-l6-Ce1">
                                     <rect key="frame" x="0.0" y="97" width="375" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="69" id="0QC-Sv-GT0" customClass="FeedTableViewCell" customModule="Workshop" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="69" id="0QC-Sv-GT0" customClass="FeedTableViewCell" customModule="Workshop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0QC-Sv-GT0" id="Ic1-Mh-wVi">
-                                            <frame key="frameInset" width="375" height="68"/>
+                                            <frame key="frameInset" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
@@ -329,6 +329,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="User" width="32" height="30"/>
         <image name="background" width="375" height="667"/>
         <image name="feed" width="23" height="25"/>
         <image name="loginButton" width="221" height="37"/>
