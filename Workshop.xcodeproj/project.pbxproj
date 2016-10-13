@@ -10,6 +10,9 @@
 		14AA459A3C8FDE45C7D3AD1C /* Pods_Workshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB89FEF22D7ABC128954704 /* Pods_Workshop.framework */; };
 		1F4126A91DA08D1200DF3CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */; };
 		1F4126AB1DA0901000DF3CC0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4126AA1DA0901000DF3CC0 /* LoginController.swift */; };
+		1F4127121DADE40300DF3CC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4127111DADE40300DF3CC0 /* User.swift */; };
+		1F4127141DADE64D00DF3CC0 /* LoginController+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4127131DADE64D00DF3CC0 /* LoginController+Handler.swift */; };
+		1F4127161DADE6DA00DF3CC0 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4127151DADE6DA00DF3CC0 /* SignupController.swift */; };
 		698638341D949DAE00FEA954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698638331D949DAE00FEA954 /* AppDelegate.swift */; };
 		698638361D949DAE00FEA954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698638351D949DAE00FEA954 /* ViewController.swift */; };
 		698638391D949DAF00FEA954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698638371D949DAF00FEA954 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		1F4126A81DA08D1200DF3CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F4126AA1DA0901000DF3CC0 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		1F4126AC1DA1C7F900DF3CC0 /* googlesignin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = googlesignin.h; sourceTree = "<group>"; };
+		1F4127111DADE40300DF3CC0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F4127131DADE64D00DF3CC0 /* LoginController+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+Handler.swift"; sourceTree = "<group>"; };
+		1F4127151DADE6DA00DF3CC0 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		3AB89FEF22D7ABC128954704 /* Pods_Workshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B8800CDDE33D50022100C /* Pods-Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.release.xcconfig"; sourceTree = "<group>"; };
 		698638301D949DAE00FEA954 /* Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4127171DADEB5000DF3CC0 /* Firebase Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				1F4127131DADE64D00DF3CC0 /* LoginController+Handler.swift */,
+				1F4126AA1DA0901000DF3CC0 /* LoginController.swift */,
+				698638451D94A2F200FEA954 /* WorkshopsViewController.swift */,
+			);
+			name = "Firebase Stuff";
+			sourceTree = "<group>";
+		};
 		26DEFDD4524360AD402DF84D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +98,12 @@
 		698638321D949DAE00FEA954 /* Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				1F4127171DADEB5000DF3CC0 /* Firebase Stuff */,
 				698638331D949DAE00FEA954 /* AppDelegate.swift */,
 				698638351D949DAE00FEA954 /* ViewController.swift */,
 				698638371D949DAF00FEA954 /* Main.storyboard */,
-				698638451D94A2F200FEA954 /* WorkshopsViewController.swift */,
+				1F4127111DADE40300DF3CC0 /* User.swift */,
 				698638471D94A30000FEA954 /* FeedViewController.swift */,
-				1F4126AA1DA0901000DF3CC0 /* LoginController.swift */,
 				698638491D94A31200FEA954 /* WorkshopCollectionViewCell.swift */,
 				6986384B1D94A32200FEA954 /* FeedTableViewCell.swift */,
 				6986383A1D949DAF00FEA954 /* Assets.xcassets */,
@@ -95,6 +111,7 @@
 				6986383C1D949DAF00FEA954 /* LaunchScreen.storyboard */,
 				6986383F1D949DAF00FEA954 /* Info.plist */,
 				1F4126AC1DA1C7F900DF3CC0 /* googlesignin.h */,
+				1F4127151DADE6DA00DF3CC0 /* SignupController.swift */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";
@@ -236,7 +253,10 @@
 				6986384A1D94A31200FEA954 /* WorkshopCollectionViewCell.swift in Sources */,
 				6986384C1D94A32200FEA954 /* FeedTableViewCell.swift in Sources */,
 				698638461D94A2F200FEA954 /* WorkshopsViewController.swift in Sources */,
+				1F4127161DADE6DA00DF3CC0 /* SignupController.swift in Sources */,
 				698638361D949DAE00FEA954 /* ViewController.swift in Sources */,
+				1F4127121DADE40300DF3CC0 /* User.swift in Sources */,
+				1F4127141DADE64D00DF3CC0 /* LoginController+Handler.swift in Sources */,
 				698638481D94A30000FEA954 /* FeedViewController.swift in Sources */,
 				698638341D949DAE00FEA954 /* AppDelegate.swift in Sources */,
 				1F4126AB1DA0901000DF3CC0 /* LoginController.swift in Sources */,

@@ -12,7 +12,33 @@ import GoogleSignIn
 
 class LoginController: UIViewController, GIDSignInUIDelegate {
     
-    @IBOutlet weak var signInButton: GIDSignInButton!
+    func checkIfUserIsLoggedIn() {
+        
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        } else {
+            self.workshopsController.fetchUserAndSetupNavBarTitle()
+        }
+    }
+    
+    func handleLogout() {
+        
+        do {
+            
+            try! FIRAuth.auth()!.signOut()
+            
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        let loginController = LoginController()
+        present(loginController, animated: true, completion: nil)
+    }
+
+    
+    let workshopsController = WorkshopsViewController()
+    
+    // @IBOutlet weak var signInButton: GIDSignInButton!
     //
     var googleRegisterButton: GIDSignInButton! = {
         let button = GIDSignInButton()
@@ -20,6 +46,15 @@ class LoginController: UIViewController, GIDSignInUIDelegate {
         //
         return button
     }()
+    
+    @IBAction func loginButton(_ sender: AnyObject) {
+        
+        handleRegister()
+    }
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: UITextField!
 
     @IBOutlet weak var loginRegisterButton: UIButton!
     
@@ -38,8 +73,8 @@ class LoginController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
         
-        view.addSubview(googleRegisterButton)
-        setupGoogleRegisterButton()
+       // view.addSubview(googleRegisterButton)
+       // setupGoogleRegisterButton()
     }
 
     override func didReceiveMemoryWarning() {

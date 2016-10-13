@@ -17,8 +17,6 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         navBar()
 
-        
-
         // Do any additional setup after loading the view.
     }
 
